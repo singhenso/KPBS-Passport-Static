@@ -149,9 +149,9 @@ Table Membership tier
         display: flex;
         flex-direction: row;
         border-top: 1px solid rgba(200, 200, 200, .4);
-        div {
+        > div {
             flex: 1;
-            padding: 10px;
+            padding: 10px 5px;
         }
     }
     .passport-table__head__col:nth-child(1) {
@@ -193,6 +193,10 @@ Table Membership tier
         padding: 13px 0 0;
     }
 }
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .passport-table__head {
+        gap: 30px;
+    }
+}
 @media (max-width: 600px) {}
 @media (max-width: 475px) {}

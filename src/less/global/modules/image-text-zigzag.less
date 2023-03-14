@@ -4,7 +4,7 @@
 image-text__zigzag
 =====================================================================
 */
-.image-text-grey {
+.square-img-text {
     display: flex;
     justify-content: space-between;
     background-color: @primary-grey-bg;
@@ -74,22 +74,31 @@ image-text__zigzag
         }
     }
     &.switch {
-        .image-text-grey__content {
+        .square-img-text__content {
             order: 1;
         }
-        .image-text-grey__picture {
+        .square-img-text__picture {
             order: 2
         }
     }
 }
 @media (max-width: 768px) {
-    .image-text-grey__content__wrapper {
+    .square-img-text__content__wrapper {
         max-width: 100%;
         padding: 0 15px;
     }
 }
+@media (max-width: 650px) {
+    .square-img-text__picture--image {
+        width: 100% !important;
+        height: unset !important; 
+        img {
+            height: unset;
+        }
+    }
+}
 @media (max-width: 600px) {
-    .image-text-grey {
+    .square-img-text {
         flex-direction: column;
         &__content {
             width: 100%;
@@ -102,10 +111,10 @@ image-text__zigzag
             width: 100%;
         }
         &.switch {
-            .image-text-grey__content {
+            .square-img-text__content {
                 order: 2;
             }
-            .image-text-grey__picture {
+            .square-img-text__picture {
                 order: 1;
             }
         }

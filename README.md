@@ -49,4 +49,4 @@ That's it! You can now use these packages in your Gulpfile to automate your buil
 
 ### Open the index.html
 
-Open the dist/index.html to view the web app.
+Open the Passport_modules/index.html to view the web webpage.

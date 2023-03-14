@@ -147,6 +147,15 @@
         }
         &__devices {}
     }
+    .passport-table__footer__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        a {
+            margin: 15px 0 15px 0;
+        }
+    }
+    
 }
 @media (max-width: 450px) {
     .pp-footer {
@@ -180,5 +189,8 @@
             padding: 40px 15px;
             gap: 20px;
         }
+    }
+    .passport-table__head__col__wrapper > div:nth-child(2) > div > div > a {
+        display: none;
     }
 }

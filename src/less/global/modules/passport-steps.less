@@ -5,8 +5,9 @@ Steps
 =====================================================================
 */
 .passport-steps {
-    margin: 60px 0;
+    padding: 60px 15px;
     text-align: center;
+    background-color: #FAFAFA;
     &__wrapper {
         &__head {
             h2 {
@@ -35,6 +36,10 @@ Steps
                         }
                         a {
                             color: @btn-purple;
+                            font-size: 14px;
+                            svg {
+                                height: 10px;
+                            }
                         }
                         p {
                             margin: 10px 0 0 0;
@@ -50,8 +55,7 @@ Steps
 }
 @media (max-width: 768px) {
     .passport-steps {
-        margin: 40px 0;
-        padding: 0 15px;
+        padding: 40px 15px;
         text-align: center;
     }
     .passport-steps__wrapper__body__items {

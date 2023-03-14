@@ -41,3 +41,8 @@ That's it! You can now use these packages in your Gulpfile to automate your buil
 ### Open the index.html
 
 Open the Passport_modules/index.html to view the web webpage.
+
+## Photo on iStockphoto Licensed and Owned by KPBS
+
+The photo displayed on iStockphoto is licensed and owned by KPBS. KPBS is the owner of the rights to the photo and has granted iStockphoto the permission to display and license the photo. Any use of the photo must be authorized by KPBS.
+https://www.istockphoto.com/photo/happy-senior-couple-watching-tv-gm1053494320-281464181

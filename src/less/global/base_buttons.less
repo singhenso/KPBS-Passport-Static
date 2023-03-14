@@ -1,0 +1,77 @@
+/* =========== STARTbase remove kpbs stlye.css elements ===========*/
+body {
+    --topBarHeight: 0;
+    --navBarHeight: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    /* regular */
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    /* bold */
+}
+
+/* =========== END base remove kpbs stlye.css elements ===========*/
+
+// Color
+@primary-purple: #0B135C;
+@btn-border:1px solid #2638C4;
+@btn-purple: #2638C4;
+@text-blue: #2638C4;
+@primary-purple-gradient: radial-gradient(55em 60em at -97% 50%, #0B135C 50%, transparent 50%);
+@primary-grey-bg: #FAFAFA;
+// Height
+@min-height: 440px;
+@circle-width: 400px;
+
+//overlay
+@overlay: inset 0 0 0 1000px rgba(0, 0, 0, 0.45);
+
+/* 
+=====================================================================
+button block
+=====================================================================
+*/
+.arrow-btn {
+    border-radius: 50px;
+    background-clip: padding-box;
+    font-size: 1.125em;
+    display: inline-block;
+    font-weight: 500;
+    font-size:16px;
+    padding: 10px 25px;
+    border: @btn-border;
+    background-color: #fff;
+
+    svg {
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    &.white-arrow-btn {
+        background-color: #fff;
+        color: @text-blue;
+    }
+}
+&.purple-arrow-btn {
+    background-color: @btn-purple;
+    color: #fff;
+    border: none;
+svg {
+    path {
+        fill: #fff;
+    }
+}
+}

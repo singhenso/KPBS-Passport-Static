@@ -1,0 +1,56 @@
+/* 
+=====================================================================
+Hero Block
+=====================================================================
+*/
+
+
+
+.passport-hero {
+    background-color: @primary-purple;
+    min-height: @min-height;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #fff;
+
+    &__content {
+        padding: 60px 0 60px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__logo {
+            svg {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__paragraph {}
+
+        &__icons {}
+        &__cta {
+            margin: 30px 0;
+        }
+
+        p {
+          margin: 0;
+        }
+
+    }
+    &__image {
+        width: 100%;
+        background-position: initial;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../img/passport_image.jpg);
+        height: @min-height;
+        box-shadow: @overlay;
+
+        &__circle {
+            width: @circle-width;
+            background: @primary-purple-gradient;
+            height: @min-height;
+        }
+    }
+
+}

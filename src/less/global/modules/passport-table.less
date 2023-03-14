@@ -131,8 +131,8 @@ Table Membership tier
 }
 @media (max-width: 900px) {
     .passport-table {
-        padding: 0 15px;
-        margin: 30px 0 15px;
+        padding: 30px 15px;
+        margin: 0;
         padding-bottom: 0;
     }
     .passport-table__head {
@@ -165,6 +165,9 @@ Table Membership tier
         justify-content: center;
         align-items: center;
     }
+    .passport-table__feature-item--text {
+        text-align: center;
+    }
     .passport-table__feature__item__bullet__container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -196,6 +199,22 @@ Table Membership tier
 @media (max-width: 768px) {
     .passport-table__head {
         gap: 30px;
+    }
+    .passport-table__footer {
+        text-align: center;
+    }
+    .passport-table__footer__buttons {
+        margin: 30px 0;
+        gap: 30px !important;
+        > div {
+            gap: 30px;
+            a {
+                margin-top: 0px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
 @media (max-width: 600px) {}

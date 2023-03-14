@@ -6,7 +6,6 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 
-
 // Define paths
 const paths = {
   styles: {
@@ -16,6 +15,10 @@ const paths = {
   script: {
     src: 'src/js/*.js',
     dest: 'dist/js/'
+  },
+  images: {
+    src: 'src/img/**/*',
+    dest: 'dist/img/'
   }
 };
 
@@ -31,23 +34,29 @@ function compileStyles() {
     .pipe(gulp.dest(paths.styles.dest));
 }
 
-// Minifiy and uglify JS
+// Minify and uglify JS
 function minifyJS() {
-    return gulp.src(paths.script.src)
-      .pipe(uglify({mangle: true}))
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest(paths.script.dest));
-  }
-  
+  return gulp.src(paths.script.src)
+    .pipe(uglify({ mangle: true }))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest(paths.script.dest));
+}
 
-// Watch for changes to Less files
+// Optimize images
+function optimizeImages() {
+  return gulp.src(paths.images.src)
+    .pipe(gulp.dest(paths.images.dest));
+}
+
+// Watch for changes to Less, JS, and image files
 function watch() {
   gulp.watch('src/less/**/*.less', compileStyles);
   gulp.watch('src/js/**/*.js', minifyJS);
+  gulp.watch('src/img/**/*', optimizeImages);
 }
-
 
 // Export tasks
 exports.watch = watch;
 exports.minifyJS = minifyJS;
-exports.default = gulp.series(compileStyles, minifyJS, watch);
+exports.optimizeImages = optimizeImages;
+exports.default = gulp.series(gulp.parallel(compileStyles, minifyJS, optimizeImages), watch);

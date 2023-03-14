@@ -41,7 +41,7 @@ Navigate to the root directory of your project.
 Run the following command to install all of the required packages as development dependencies in your project:
 
 ```
-npm install --save-dev gulp gulp-less gulp-sourcemaps gulp-autoprefixer gulp-clean-css gulp-rename gulp-uglify
+npm install --save-dev gulp gulp-less gulp-sourcemaps gulp-autoprefixer gulp-clean-css gulp-rename gulp-uglify 
 ```
 
 Wait for the installation to complete. You should see a progress indicator in your terminal as each package is installed.

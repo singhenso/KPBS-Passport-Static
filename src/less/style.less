@@ -1,16 +1,105 @@
-/*base remove kpbs stlye.css elements*/
+/* =========== STARTbase remove kpbs stlye.css elements ===========*/
 body {
     --topBarHeight: 0;
     --navBarHeight: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; /* regular */
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 940px;
     margin: 0 auto;
 }
-// Hero Block
-.passport__hero {
-&__poster {
-    
+h1 ,h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700; /* bold */
+  }
+/* =========== END base remove kpbs stlye.css elements ===========*/
+
+// Color
+@primary-purple: #0B135C;
+@text-blue: #2638C4;
+@primary-purple-gradient: radial-gradient(55em 60em at -97% 50%,#0B135C 50%,transparent 50%);;
+// Height
+@min-height: 440px;
+@circle-width: 350px;
+
+//overlay
+@overlay:  inset 0 0 0 1000px rgba(0, 0, 0, 0.25);
+
+/* 
+=====================================================================
+button block
+=====================================================================
+*/
+.arrow-btn {
+    border-radius: 50px;
+    background-clip: padding-box;
+    font-size: 1.125em;
+    display: inline-block;
+    font-weight: 500;
+    svg {
+        width: 20px;
+        margin-left: 5px;
+    }
+    &.white-arrow-btn {
+        background-color: #fff;
+        color: @text-blue;
+        padding: 10px 25px;
+    }
 }
-}
+
+
+/* 
+=====================================================================
+Hero Block
+=====================================================================
+*/
+
+
+
+.passport-hero {
+    background-color: @primary-purple;
+    min-height: @min-height;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #fff;
+    &__content {
+        padding: 60px 50px;
+        &__logo {
+            svg {
+                margin-bottom: 25px;
+            }
+        }
+
+      &__paragraph {
+      }
+      &__icons {
+
+
+      }
+      &__cta {
+        margin-bottom: 25px;
+      }
+      p {
+        margin-top: 0;
+      }
+
+    }
+    &__image {
+        width: 100%;
+        background-position: initial;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../img/passport_image.jpg);
+        height: @min-height;
+        box-shadow: @overlay;
+
+        &__circle {
+            width: @circle-width;
+            background: @primary-purple-gradient;
+            height: @min-height;
+        }
+    }
+  }
+  

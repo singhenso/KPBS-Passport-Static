@@ -1,23 +1,14 @@
 
-# Flashcard App
-This is a practice project to build a flashcard app designed to help users memorize specific programming knowledge concepts. The app is meant to act as a tool to assist users in retaining and recalling important information over time.
+# KPBS Passport Learn More Page Rebuild and Integration
+This project aims to rebuild the KPBS Passport Learn More page by replicating a mockup using HTML, CSS, LESS, and a Gulpfile. The objective is to create a static web page that looks and functions like the original page, and then integrate this new page into the KPBS Grove CMS.
 
----
+To achieve this, each section of the page will have its own .less file within less/global/modules/style.less. This approach will make it easy to maintain and update the code in the future.
 
-## About
-As the developer of this app, I will be using it to apply knowledge in my long-term memory through repetition. Flashcards have been proven to be an effective learning tool for memorizing and retaining information, especially when used consistently over time.
+The project will be hosted on GitHub and will include detailed documentation on how to replicate the page, integrate it with the CMS, and make updates as needed. The final product will be a fully functional static page that meets the requirements of the KPBS Passport Learn More page.
 
-This project aims to create a web app that displays data from a Google Sheets document. We will use the Google Sheets API to retrieve the data in JSON format, which we will then display on the front end of the app using BEM-style HTML and CSS.
+Overall, this project will help to improve the user experience on the KPBS website by providing an updated and streamlined Learn More page for KPBS Passport. It will also serve as an example of how to build and integrate static pages into the KPBS Grove CMS using modern web development technologies.
 
----
-
-## Benefits of a Flashcard App
-A flashcard app can provide several benefits, including:
-
-- **Increased retention**: Flashcards can help users retain information by repeating concepts until they become familiar and automatic.
-- **Active recall**: Flashcards require active recall, which has been shown to improve long-term memory retention.
-- **Efficient studying**: Flashcards are a convenient and efficient way to review and memorize information, as they can be used anytime, anywhere.
-- **Personalized learning**: Flashcard apps can be customized to suit the user's specific learning needs, allowing them to focus on the concepts that they need to work on the most.
+View Webpage hosted on Github
 
 ---
 ## Technology Stack
@@ -25,10 +16,9 @@ A flashcard app can provide several benefits, including:
 - **HTML**: We will use BEM (Block Element Modifier) methodology to structure the HTML code.
 - **CSS**: We will write the CSS code using LESS, a preprocessor that extends the functionality of CSS.
 - **Gulp**: We will use Gulp, a task runner, to automate tasks such as preprocessing the CSS code for deployment.
-- **Google Sheets API**: We will use the Google Sheets API to retrieve the data in JSON format.
 
 ## Usage
-To use this flashcard app, simply run the program and begin reviewing the flashcards. Each card will display a programming concept or term on the front, and the corresponding definition or explanation on the back. Use the app regularly to improve your memory retention and recall of important programming concepts.
+To use this static webpage, simply run the program and begin reviewing the flashcards. Each card will display a programming concept or term on the front, and the corresponding definition or explanation on the back. Use the app regularly to improve your memory retention and recall of important programming concepts.
 
 ---
 
@@ -59,25 +49,4 @@ That's it! You can now use these packages in your Gulpfile to automate your buil
 
 ### Open the index.html
 
-Open the index.html to view the web app.
-
----
-
-## JavaScript file notes:
-In summary, this code fetches data from a Google Sheet in CSV format, parses the CSV data into an array of objects representing flashcards, and then dynamically creates HTML elements for each flashcard using JavaScript. The parseCSV() function is used to convert the CSV data into an array of objects, and the fetch() API is used to retrieve the data from the Google Sheet. Finally, event listeners are added to each flashcard element to allow them to be flipped over when clicked.
-
-In this updated code, we've added a new shuffleArray function that randomly shuffles the items in the flashcards array.
-
-We then call this function to create a new shuffledFlashcards array, which we use in the forEach loop to create the HTML elements.
-
-With this change, the flashcards will be displayed in a random order each time the page is loaded.
-
----
-
-## Contributing
-Contributions to this project are welcome. If you encounter any issues or have suggestions for improvements, please submit a pull request or open an issue on the project's GitHub page.
-
----
-
-## Reference
-- Good flashcard animation: https://codepen.io/dennythecoder/pen/OZRjaJ# Flashcard-Study-App
+Open the dist/index.html to view the web app.

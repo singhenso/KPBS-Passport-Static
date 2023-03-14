@@ -38,7 +38,10 @@ Wait for the installation to complete. You should see a progress indicator in yo
 
 That's it! You can now use these packages in your Gulpfile to automate your build process.
 
-### Open the index.html
+---
+
+## How to view the static page
+### Installation Open the index.html
 
 Open the Passport_modules/index.html to view the web webpage.
 

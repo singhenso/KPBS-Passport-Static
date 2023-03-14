@@ -1,0 +1,45 @@
+
+/// steps
+
+.passport-steps {
+    margin: 60px 0;
+    text-align: center;
+    &__wrapper {
+        &__head {
+            h2 {
+                margin-bottom: 15px;
+            }
+            p {
+                margin: 0 0 30px 0;
+                font-size: 16px;
+            }
+        }
+        &__body {
+            &__items {
+                display: flex;
+                flex-direction: row;
+                &__item {
+                    &--svg {}
+                    &--text {
+                        span {
+                            background-color: @btn-purple;
+                            color: #fff;
+                            padding: 5px 10px;
+                            display: inline-block;
+                            border-radius: 50px;
+                            font-size: 14px;
+                            margin: 10px 0;
+                        }
+                        a {
+                            color: @btn-purple;
+                        }
+                        p {
+                            margin: 10px 0 0 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

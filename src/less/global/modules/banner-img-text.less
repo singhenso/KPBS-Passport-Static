@@ -1,45 +1,37 @@
 
 /* 
 =====================================================================
-Hero Block
+Banner Bottom
 =====================================================================
 */
 
-
-
-.passport-hero {
+.banner-img-text {
     background-color: @primary-purple;
-    min-height: @min-height;
     display: flex;
-    flex-wrap: nowrap;
+    height: 368px;
+    overflow: hidden;
     color: #fff;
 
     &__content {
-        padding: 60px 0 60px 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0 30px;
 
-        &__logo {
-            img {
-                margin-bottom: 25px;
-            }
-        }
+
 
         &__paragraph {}
 
         &__icons {}
         &__cta {
-            margin: 30px 0;
+            margin: 20px 0 0 0;
         }
 
         p {
           margin: 0;
         }
         &__buttons {
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
+
         }
 
     }
@@ -51,11 +43,39 @@ Hero Block
         background-image: url(../img/passport_image.jpg);
         height: @min-height;
         box-shadow: @overlay;
+        min-width: 500px;
+    height: auto;
+    border-radius: 0;
+    clip-path: circle(67% at 40% 50%);
 
         &__circle {
             width: @circle-width;
             background: @primary-purple-gradient;
             height: @min-height;
+        }
+    }
+    &--list{
+        ul {
+            padding: 15px 0;
+            font-size: 12px;
+
+            li {
+                margin-bottom: 15px;
+                display: flex;
+
+                svg {
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        p {
+            margin: 16px 0;
         }
     }
 

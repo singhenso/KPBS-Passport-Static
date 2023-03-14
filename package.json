@@ -9,6 +9,7 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "gulp-imagemin": "^8.0.0"
+    "gulp-imagemin": "^8.0.0",
+    "gulp-include": "^2.4.1"
   }
 }

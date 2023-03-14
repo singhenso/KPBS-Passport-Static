@@ -5,6 +5,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
+const include = require('gulp-include');
 
 // Define paths
 const paths = {

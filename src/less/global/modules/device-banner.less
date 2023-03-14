@@ -4,15 +4,12 @@
 Device mockup Banner
 =====================================================================
 */
-
-
 .passport__device {
     background-color: @primary-purple;
     display: flex;
     height: 400px;
     overflow: hidden;
     color: #fff;
-
     &__content {
         display: flex;
         flex-direction: column;
@@ -20,22 +17,16 @@ Device mockup Banner
         padding: 30px 0 0 50px;
         flex: 1;
         align-items: center;
-
-
         &__paragraph {}
-
         &__icons {}
         &__cta {
             margin: 20px 0 0 0;
         }
-
         p {
           margin: 0;
         }
         &__buttons {
-
         }
-
     }
     &__image {
         width: 100%;
@@ -53,10 +44,7 @@ Device mockup Banner
         display: flex;
     justify-content: center;
     align-items: center;
-
     flex: 2;
-
-
         &__circle {
             width: @circle-width;
             background: @primary-purple-gradient;
@@ -67,44 +55,35 @@ Device mockup Banner
         ul {
             padding: 15px 0;
             font-size: 12px;
-
             li {
                 margin-bottom: 15px;
                 display: flex;
-
                 svg {
                     margin-right: 10px;
                     margin-bottom: 0;
                 }
-
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
-
         p {
             margin: 16px 0;
         }
     }
-
 }
-
 @media (max-width: 1000px) {
     .passport__device__image {
         min-width: 451px;
         -webkit-clip-path: circle(67% at 70% 60%);
         clip-path: circle(67% at 70% 60%);
     }
-    
 }
 @media (max-width: 768px) {
-    
     .passport__device {
         flex-direction: column;
         overflow: unset;
         height: 100%;
-
     }
     .passport__device__content {
         padding: 40px 15px;
@@ -116,5 +95,4 @@ Device mockup Banner
     }
 }
 @media (max-width: 475px) {
-    
 }

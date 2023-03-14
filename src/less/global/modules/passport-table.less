@@ -5,14 +5,12 @@ Table Membership tier
 */
 .passport-table {
     margin: 60px 0;
-
     &__seperator {
         display: none;
         width: 1px;
         height: 20px;
         background: #e8eaed;
     }
-
     &__head {
         align-items: center;
         text-align: center;
@@ -20,24 +18,20 @@ Table Membership tier
         justify-content: space-between;
         display: grid;
         grid-template-columns: 1fr 1fr;
-
         &__col {
             display: flex;
             flex: 1;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             &--content {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-
                 img {
                     margin-bottom: 15px;
                 }
-
                 &--cta a {
                     background-color: @btn-purple;
                     color: #fff;
@@ -46,101 +40,65 @@ Table Membership tier
                     margin-bottom: 15px;
                     white-space: unset;
                 }
-
                 span {
                     font-size: 14px;
                     font-weight: bold;
                 }
             }
-
             &:nth-child(1) {
                 h3 {
                     color: @btn-purple;
                     margin-bottom: 15px;
                 }
             }
-
             &:nth-child(2) {
                 h4 {
                     font-size: 14px;
                     max-width: 75%;
                 }
             }
-
             &:nth-child(3) {
                 h4 {
                     font-size: 14px;
                     max-width: 75%;
                 }
             }
-
             &:nth-child(1) {
                 flex: 2;
             }
-
             &__wrapper {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
             }
         }
-
     }
-
-
     &__feature {
         &__item {
-            
-            
             border-bottom: 1px solid rgba(200, 200, 200, 0.4);
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding: 15px 0;
-
             &__bullet {
-
-                
-                
-                
-                
-                
                 img {
                     margin: 0 auto;
                 }
-
                 &--new {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     grid-gap: 5px;
-
                     img {
                         display: block;
                         margin-left: 0;
                     }
                 }
-
                 &:nth-child(1) {
-                    
-                    
-                    
-                    
-                    
-                    
                     font-size: 14px;
                     font-weight: 700;
-                    
-                    
-
-                    
-                    
-
-                    
                 }
-
                 &:nth-child(2) {
                     padding: 20px 0;
                 }
-
                 &__container {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
@@ -149,77 +107,56 @@ Table Membership tier
                     align-items: center;
                 }
             }
-
             &.new-label {
                 .passport-table__feature__item__bullet--new img {
                     display: inline-block;
                 }
-
             }
-
-
             &:nth-child(1) {
                 border-top: 1px solid rgba(200, 200, 200, 0.4);
                 margin-top: 20px;
-
             }
         }
-
     }
-
-
-
-
-
     &__footer {
         display: flex;
         justify-content: center;
         align-items: center;
-
         &__buttons {
             display: flex;
             flex-direction: row;
             gap: 30px;
         }
     }
-
-
 }
-
 @media (max-width: 900px) {
     .passport-table {
         padding: 0 15px;
         margin: 30px 0 15px;
         padding-bottom: 0;
     }
-
     .passport-table__head {
         gap: 40px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
-
     .passport-table__head__col--content--cta {
         flex-direction: column;
         display: flex;
     }
-
     .passport-table__head__col__wrapper {
         display: flex;
         flex-direction: row;
         border-top: 1px solid rgba(200, 200, 200, .4);
-
         div {
             flex: 1;
             padding: 10px;
         }
     }
-
     .passport-table__head__col:nth-child(1) {
         flex: 1;
     }
-
     .passport-table__feature__item {
         border-bottom: 1px solid rgba(200, 200, 200, .4);
         display: flex;
@@ -228,7 +165,6 @@ Table Membership tier
         justify-content: center;
         align-items: center;
     }
-
     .passport-table__feature__item__bullet__container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -238,35 +174,25 @@ Table Membership tier
         width: 80%;
         padding: 7px 10px 17px;
     }
-
     .passport-table__seperator {
         display: block;
     }
-
     .passport-table__seperator {
         display: block;
         margin: 0 auto;
     }
-
     .passport-table__head__col__wrapper>div:nth-child(2) {
         margin-left: 20px;
         padding-left: 20px;
         border-left: 1px solid rgba(200, 200, 200, .4);
     }
-
     .passport-table__feature__item:nth-child(1) {
         margin-top: 0px;
     }
-
     .passport-table__feature__item__bullet--new {
         padding: 13px 0 0;
     }
-
-
 }
-
 @media (max-width: 768px) {}
-
 @media (max-width: 600px) {}
-
 @media (max-width: 475px) {}

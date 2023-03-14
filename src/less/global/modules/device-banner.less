@@ -89,3 +89,32 @@ Device mockup Banner
     }
 
 }
+
+@media (max-width: 1000px) {
+    .passport__device__image {
+        min-width: 451px;
+        -webkit-clip-path: circle(67% at 70% 60%);
+        clip-path: circle(67% at 70% 60%);
+    }
+    
+}
+@media (max-width: 768px) {
+    
+    .passport__device {
+        flex-direction: column;
+        overflow: unset;
+        height: 100%;
+
+    }
+    .passport__device__content {
+        padding: 40px 15px;
+    }
+    .passport__device__image {
+        min-width: unset;
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+}
+@media (max-width: 475px) {
+    
+}

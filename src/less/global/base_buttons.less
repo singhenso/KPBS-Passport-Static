@@ -4,6 +4,7 @@ body {
     --navBarHeight: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    color: #262D26;
     /* regular */
 }
 
@@ -27,7 +28,7 @@ h6 {
 
 // Color
 @primary-purple: #0B135C;
-@btn-border:1px solid #2638C4;
+@btn-border: 1px solid #2638C4;
 @btn-purple: #2638C4;
 @text-blue: #2638C4;
 @primary-purple-gradient: radial-gradient(55em 60em at -97% 50%, #0B135C 50%, transparent 50%);
@@ -50,7 +51,7 @@ button block
     font-size: 1.125em;
     display: inline-block;
     font-weight: 500;
-    font-size:16px;
+    font-size: 16px;
     padding: 10px 25px;
     border: @btn-border;
     background-color: #fff;
@@ -64,14 +65,15 @@ button block
         background-color: #fff;
         color: @text-blue;
     }
-}
-&.purple-arrow-btn {
-    background-color: @btn-purple;
-    color: #fff;
-    border: none;
-svg {
-    path {
-        fill: #fff;
+    &.purple-arrow-btn {
+        background-color: @btn-purple;
+        color: #fff;
+        border: none;
+    
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
     }
-}
 }

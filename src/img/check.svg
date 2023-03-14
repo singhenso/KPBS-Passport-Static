@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="M3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Passport_Tablet_M3" transform="translate(-826.000000, -1563.000000)" fill="#3D9E3E">
+            <g id="s3-table" transform="translate(47.000000, 1406.000000)">
+                <g id="tbody" transform="translate(1.852698, 142.657743)">
+                    <g id="td-1" transform="translate(0.000000, -0.000000)">
+                        <g id="Checkmarks" transform="translate(497.449403, 14.821584)">
+                            <path d="M299.775331,0.361761741 C300.257681,0.84411073 300.257681,1.62615029 299.775331,2.1085002 L286.806427,15.0773489 C286.324077,15.5596988 285.542035,15.5596988 285.059685,15.0773489 L280.119154,10.1368519 C279.636805,9.65450196 279.636805,8.87246888 280.119154,8.39011897 C280.601503,7.90776905 281.383543,7.90776905 281.865893,8.39011897 L285.933056,12.4572634 L298.028607,0.361761741 C298.510957,-0.120587247 299.292981,-0.120587247 299.775331,0.361761741 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

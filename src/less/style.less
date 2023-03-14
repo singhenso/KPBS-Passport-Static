@@ -3,29 +3,39 @@ body {
     --topBarHeight: 0;
     --navBarHeight: 0;
     font-family: "Roboto", sans-serif;
-    font-weight: 400; /* regular */
+    font-weight: 400;
+    /* regular */
 }
 
 .container {
     max-width: 940px;
     margin: 0 auto;
 }
-h1 ,h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Roboto", sans-serif;
-    font-weight: 700; /* bold */
-  }
+    font-weight: 700;
+    /* bold */
+}
+
 /* =========== END base remove kpbs stlye.css elements ===========*/
 
 // Color
 @primary-purple: #0B135C;
 @text-blue: #2638C4;
-@primary-purple-gradient: radial-gradient(55em 60em at -97% 50%,#0B135C 50%,transparent 50%);;
+@primary-purple-gradient: radial-gradient(55em 60em at -97% 50%, #0B135C 50%, transparent 50%);
+;
 // Height
 @min-height: 440px;
-@circle-width: 350px;
+@circle-width: 400px;
 
 //overlay
-@overlay:  inset 0 0 0 1000px rgba(0, 0, 0, 0.25);
+@overlay: inset 0 0 0 1000px rgba(0, 0, 0, 0.25);
 
 /* 
 =====================================================================
@@ -38,10 +48,12 @@ button block
     font-size: 1.125em;
     display: inline-block;
     font-weight: 500;
+
     svg {
         width: 20px;
         margin-left: 5px;
     }
+
     &.white-arrow-btn {
         background-color: #fff;
         color: @text-blue;
@@ -64,26 +76,29 @@ Hero Block
     display: flex;
     flex-wrap: nowrap;
     color: #fff;
+
     &__content {
-        padding: 60px 50px;
+        padding: 60px 0 60px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
         &__logo {
             svg {
                 margin-bottom: 25px;
             }
         }
 
-      &__paragraph {
-      }
-      &__icons {
+        &__paragraph {}
 
+        &__icons {}
+        &__cta {
+            margin-bottom: 25px;
+        }
 
-      }
-      &__cta {
-        margin-bottom: 25px;
-      }
-      p {
-        margin-top: 0;
-      }
+        p {
+            margin-top: 0;
+        }
 
     }
     &__image {
@@ -101,5 +116,5 @@ Hero Block
             height: @min-height;
         }
     }
-  }
-  
+
+}

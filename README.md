@@ -46,3 +46,36 @@ Open the Passport_modules/index.html to view the web webpage.
 
 The photo displayed on iStockphoto is licensed and owned by KPBS. KPBS is the owner of the rights to the photo and has granted iStockphoto the permission to display and license the photo. Any use of the photo must be authorized by KPBS.
 https://www.istockphoto.com/photo/happy-senior-couple-watching-tv-gm1053494320-281464181
+
+---
+
+## Updates
+
+### 3/14/23 @ 3:55 p.m. PST
+
+- Update the class "image-text-grey" into "square-img-text" to be more concise and to avoid using color within naming the styles
+- Update with Mobile responsiveness style. Fine tuned from various devices and max-width media queries
+- Update to include high resolution licensed photo from Istock. This is the first image of family on couch watching t.v.
+-  Removed .DS_Store from the repo by applying the following commands:
+
+
+1. Add .DS_Store to .gitignore
+```
+DS_Store
+```
+2. Commit the .gitignore file to your repository:
+```
+git add .gitignore
+git commit -m "Add .gitignore to ignore .DS_Store files"
+```
+
+3. Remove any existing .DS_Store files from the repository:
+```
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+```
+
+4. Finally, push your changes to the remote repository:
+```
+git push
+
+```

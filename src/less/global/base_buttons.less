@@ -7,10 +7,12 @@ body {
     color: #262D26;
     /* regular */
 }
+
 .container {
     max-width: 940px;
     margin: 0 auto;
 }
+
 h1,
 h2,
 h3,
@@ -21,6 +23,7 @@ h6 {
     font-weight: 700;
     /* bold */
 }
+
 /* =========== END base remove kpbs stlye.css elements ===========*/
 @primary-purple: #0B135C;
 @btn-border: 1px solid #2638C4;
@@ -31,6 +34,7 @@ h6 {
 @min-height: 440px;
 @circle-width: 400px;
 @overlay: inset 0 0 0 1000px rgba(0, 0, 0, 0.45);
+
 /* 
 =====================================================================
 button block
@@ -49,42 +53,51 @@ button block
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     white-space: nowrap;
+
     svg {
         position: relative;
         transition: right 0.2s ease 0s;
         right: 4px;
     }
+
     &:hover {
         box-shadow: 0px 15px 20px rgba(0, 25, 30, 0.4);
         color: #fff;
         transform: translateY(-7px);
+
         svg {
             right: 0px;
             position: relative;
         }
     }
+
     svg {
         width: 20px;
         margin-left: 5px;
     }
+
     &.white-arrow-btn {
         background-color: #fff;
         color: @text-blue;
     }
+
     &.purple-arrow-btn {
         background-color: @btn-purple;
         color: #fff;
         border: none;
+
         svg {
             path {
                 fill: #fff;
             }
         }
     }
+
     &.transparent-arrow-btn {
         background-color: transparent;
         color: #fff;
         border: 1px solid #fff;
+
         svg {
             path {
                 fill: #fff;

@@ -17,9 +17,14 @@ Hero Block
         justify-content: center;
 
     }
+
     &__logo {
         img {
             margin-bottom: 25px;
+        }
+
+        p {
+            margin: 0;
         }
     }
 
@@ -31,9 +36,6 @@ Hero Block
         margin: 30px 0;
     }
 
-    p {
-        margin: 0;
-    }
 
     &__buttons {
         display: flex;
@@ -50,18 +52,21 @@ Hero Block
         height: @min-height;
         box-shadow: @overlay;
 
-        &__circle {
-            width: @circle-width;
-            background: @primary-purple-gradient;
-            height: @min-height;
-        }
+    }
+
+    &__circle {
+        width: @circle-width;
+        background: @primary-purple-gradient;
+        height: @min-height;
     }
 }
 
 @media (max-width: 768px) {
-    .passport-hero-banner__image__circle {
-        width: 300px;
-        height: 440px;
+    .passport-hero-banner {
+        &__circle {
+            width: 300px;
+            height: 440px;
+        }
     }
 
 }
@@ -69,23 +74,28 @@ Hero Block
 @media (max-width: 650px) {
     .passport-hero-banner {
         min-height: unset;
-    }
 
-    .passport-hero-banner__image {
-        display: none;
-    }
+        &__content {
+            padding: 40px 15px;
+            text-align: center;
+    
+        }
+        &__logo {
+            img {
+                margin: 0 auto 20px;
+            }
+        }
 
-    .passport-hero-banner__content {
-        padding: 40px 15px;
-        text-align: center;
+        &__image {
+            display: none;
+        }
 
-        img {
-            margin: 0 auto;
+        &__cta {
+            margin: 20px 0;
+        }
+        &__icons {
+            display: flex;
+            justify-content: center;
         }
     }
-
-    .passport-hero-banner__content__cta {
-        margin: 20px 0;
-    }
-
 }

@@ -1,6 +1,7 @@
 /* 
 =====================================================================
-Steps
+KPBS Steps
+src/blocks/passport-steps.html
 =====================================================================
 */
 .passport-steps {
@@ -8,47 +9,45 @@ Steps
     text-align: center;
     background-color: #FAFAFA;
 
-    &__wrapper {
+    &__container {}
 
+    &__body {}
 
-        &__body {
-            &__items {
-                display: flex;
-                flex-direction: row;
+    &__items-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
 
-                &__item {
-                    &--svg {}
+    &__single {}
 
-                    &--text {
-                        span {
-                            background-color: @btn-purple;
-                            color: #fff;
-                            padding: 5px 10px;
-                            display: inline-block;
-                            border-radius: 50px;
-                            font-size: 14px;
-                            margin: 10px 0;
-                        }
+    &__svg {}
 
-                        a {
-                            color: @btn-purple;
-                            font-size: 14px;
+    &__text {
+        span {
+            background-color: @btn-purple;
+            color: #fff;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 50px;
+            font-size: 14px;
+            margin: 10px 0;
+        }
 
-                            svg {
-                                height: 10px;
-                            }
-                        }
+        a {
+            color: @btn-purple;
+            font-size: 14px;
 
-                        p {
-                            margin: 10px 0 0 0;
-                            font-size: 14px;
-                        }
-                    }
-                }
+            svg {
+                height: 10px;
             }
         }
+
+        p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
     }
-    
+
 }
 
 @media (max-width: 1000px) {}
@@ -57,19 +56,18 @@ Steps
     .passport-steps {
         padding: 40px 15px;
         text-align: center;
-    }
 
-    .passport-steps__wrapper__body__items {
-        flex-direction: column;
-        gap: 30px;
+        &__items-wrapper {
+            flex-direction: column;
+            gap: 30px;
+        }
 
-        &__arrow {}
-
-        .passport-steps__wrapper__body__items--arrow {
+        &__arrow {
             transform: rotate(90deg);
             /* Equal to rotateZ(45deg) */
             margin: 20px 0;
         }
+
     }
 }
 

@@ -35,18 +35,21 @@ src/blocks/passport-image-text-grid.html
                 display: flex;
 
                 svg {
-                    margin-right: 10px;
-                }
-
-                &:last-child {
-                    margin-bottom: 0;
+                    margin-right: 5px;
+                    height: 10px;
+                    top: 2px;
+                    position: relative;
                 }
             }
-        }
 
-        p {
-            margin: 16px 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
+    }
+
+    p {
+        margin: 16px 0;
     }
 
     &__text {}
@@ -129,6 +132,7 @@ src/blocks/passport-image-text-grid.html
             max-width: 100%;
             padding: 40px 15px;
         }
+
         &__content {
             width: 100%;
 

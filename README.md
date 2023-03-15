@@ -51,6 +51,14 @@ The photo displayed on iStockphoto is licensed and owned by KPBS. KPBS is the ow
 https://www.istockphoto.com/photo/happy-senior-couple-watching-tv-gm1053494320-281464181
 
 ---
+## Personal Notes:
+
+Regex for specific BEM class and then highlight
+```
+/.*image-text-grid.*/gi
+```
+---
+
 
 ## Updates
 

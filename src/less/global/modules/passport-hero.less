@@ -3,7 +3,7 @@
 Hero Block
 =====================================================================
 */
-.passport-hero {
+.passport-hero-banner {
     background-color: @primary-purple;
     min-height: @min-height;
     display: flex;
@@ -16,29 +16,29 @@ Hero Block
         flex-direction: column;
         justify-content: center;
 
-        &__logo {
-            img {
-                margin-bottom: 25px;
-            }
+    }
+    &__logo {
+        img {
+            margin-bottom: 25px;
         }
+    }
 
-        &__paragraph {}
+    &__subheading {}
 
-        &__icons {}
+    &__icons {}
 
-        &__cta {
-            margin: 30px 0;
-        }
+    &__cta {
+        margin: 30px 0;
+    }
 
-        p {
-            margin: 0;
-        }
+    p {
+        margin: 0;
+    }
 
-        &__buttons {
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-        }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
     }
 
     &__image {
@@ -59,7 +59,7 @@ Hero Block
 }
 
 @media (max-width: 768px) {
-    .passport-hero__image__circle {
+    .passport-hero-banner__image__circle {
         width: 300px;
         height: 440px;
     }
@@ -67,15 +67,15 @@ Hero Block
 }
 
 @media (max-width: 650px) {
-    .passport-hero {
+    .passport-hero-banner {
         min-height: unset;
     }
 
-    .passport-hero__image {
+    .passport-hero-banner__image {
         display: none;
     }
 
-    .passport-hero__content {
+    .passport-hero-banner__content {
         padding: 40px 15px;
         text-align: center;
 
@@ -84,7 +84,7 @@ Hero Block
         }
     }
 
-    .passport-hero__content__cta {
+    .passport-hero-banner__content__cta {
         margin: 20px 0;
     }
 

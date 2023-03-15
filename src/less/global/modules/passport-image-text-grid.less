@@ -1,9 +1,10 @@
 /* 
 =====================================================================
-image-text__zigzag
+Passport Image Text Grid
+src/blocks/passport-image-text-grid.html
 =====================================================================
 */
-.square-img-text {
+.image-text-grid {
     display: flex;
     justify-content: space-between;
     background-color: @primary-grey-bg;
@@ -14,133 +15,135 @@ image-text__zigzag
         justify-content: center;
         align-items: center;
 
-        &__wrapper {
-            max-width: 75%;
-            display: flex;
-            gap: 10px;
+    }
 
-            &--heading {
+    &__wrapper {
+        max-width: 75%;
+        display: flex;
+        gap: 10px;
+
+    }
+
+    &__summary {
+        font-size: 14px;
+
+        ul {
+            padding: 15px 0;
+
+            li {
+                margin-bottom: 15px;
                 display: flex;
-                gap: 15px;
-            }
 
-            &--summary {
-                font-size: 16px;
-
-                ul {
-                    padding: 15px 0;
-
-                    li {
-                        margin-bottom: 15px;
-                        display: flex;
-
-                        svg {
-                            margin-right: 10px;
-                        }
-
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
+                svg {
+                    margin-right: 10px;
                 }
 
-                p {
-                    margin: 16px 0;
-                    font-size: 16px;
+                &:last-child {
+                    margin-bottom: 0;
                 }
-            }
-
-            &--summary-cta {
-                .arrow-btn {
-                    margin: 10px 0 0 0;
-                }
-            }
-
-            &--summary-text {}
-
-            &--svg {
-                padding-top: 5px;
             }
         }
+
+        p {
+            margin: 16px 0;
+        }
+    }
+
+    &__text {}
+
+    &__buttons {
+        .arrow-btn {
+            margin: 10px 0 0 0;
+        }
+    }
+
+    &__textsvg {
+        padding-top: 5px;
     }
 
     &__picture {
         width: 50%;
         position: relative;
 
-        &--svg {
-            svg {
-                position: absolute;
-                z-index: 3;
-                top: 0;
-                left: 0;
-            }
-        }
 
-        &--image {
+    }
+
+    &__image {
+        width: 100%;
+        height: 400px;
+
+        img {
             width: 100%;
-            height: 400px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+            height: 100%;
+            object-fit: cover;
         }
     }
 
-    &.switch {
-        .square-img-text__content {
+    &--switch {
+        .image-text-grid__content {
             order: 1;
         }
 
-        .square-img-text__picture {
+        .image-text-grid__picture {
             order: 2
+        }
+    }
+
+    &__triangle {
+        svg {
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            left: 0;
         }
     }
 }
 
 @media (max-width: 768px) {
-    .square-img-text__content__wrapper {
-        max-width: 100%;
-        padding: 0 15px;
+    .image-text-grid {
+        &__wrapper {
+            max-width: 100%;
+            padding: 0 15px;
+        }
     }
 }
 
 @media (max-width: 650px) {
-    .square-img-text__picture--image {
-        width: 100% !important;
-        height: unset !important;
+    .image-text-grid {
+        &__image {
+            width: 100% !important;
+            height: unset !important;
 
-        img {
-            height: unset;
+            img {
+                height: unset;
+            }
         }
     }
 }
 
 @media (max-width: 600px) {
-    .square-img-text {
+    .image-text-grid {
         flex-direction: column;
 
+        &__wrapper {
+            max-width: 100%;
+            padding: 40px 15px;
+        }
         &__content {
             width: 100%;
 
-            &__wrapper {
-                max-width: 100%;
-                padding: 40px 15px;
-            }
         }
 
         &__picture {
             width: 100%;
         }
 
-        &.switch {
-            .square-img-text__content {
+        &--switch {
+            .image-text-grid__content {
                 order: 2;
             }
 
-            .square-img-text__picture {
+            .image-text-grid__picture {
                 order: 1;
             }
         }

@@ -1,9 +1,10 @@
 /* 
 =====================================================================
-Device mockup Banner
+Passport Device Banner
+src/blocks/passport-device-banner.html
 =====================================================================
 */
-.passport__device {
+.passport-device-banner {
     background-color: @primary-purple;
     display: flex;
     height: 400px;
@@ -18,19 +19,18 @@ Device mockup Banner
         flex: 1;
         align-items: center;
 
-        &__paragraph {}
-
-        &__icons {}
-
-        &__cta {
-            margin: 20px 0 0 0;
-        }
-
         p {
             margin: 0;
         }
 
-        &__buttons {}
+        h3 {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    &__cta {
+        margin: 20px 0 0 0;
     }
 
     &__image {
@@ -50,31 +50,27 @@ Device mockup Banner
         justify-content: center;
         align-items: center;
         flex: 2;
-
-        &__circle {
-            width: @circle-width;
-            background: @primary-purple-gradient;
-            height: @min-height;
-        }
     }
 
-    &--list {
+    &__checklist {
         ul {
             padding: 15px 0;
-            font-size: 12px;
+            font-size: 14px;
 
             li {
                 margin-bottom: 15px;
                 display: flex;
 
                 svg {
-                    margin-right: 10px;
-                    margin-bottom: 0;
+                    margin-right: 5px;
+                    height: 10px;
+                    top: 2px;
+                    position: relative;
                 }
+            }
 
-                &:last-child {
-                    margin-bottom: 0;
-                }
+            &:last-child {
+                margin-bottom: 0;
             }
         }
 
@@ -85,29 +81,43 @@ Device mockup Banner
 }
 
 @media (max-width: 1000px) {
-    .passport__device__image {
-        min-width: 451px;
-        -webkit-clip-path: circle(67% at 70% 60%);
-        clip-path: circle(67% at 70% 60%);
+    .passport-device-banner {
+        &__image {
+            min-width: 451px;
+            -webkit-clip-path: circle(67% at 70% 60%);
+            clip-path: circle(67% at 70% 60%);
+        }
     }
 }
 
 @media (max-width: 768px) {
-    .passport__device {
+    .passport-device-banner {
         flex-direction: column;
         overflow: unset;
         height: 100%;
+
+        &__content {
+            padding: 40px 15px;
+        }
+
+        &__image {
+            min-width: unset;
+            -webkit-clip-path: none;
+            clip-path: none;
+        }
     }
 
-    .passport__device__content {
-        padding: 40px 15px;
-    }
-
-    .passport__device__image {
-        min-width: unset;
-        -webkit-clip-path: none;
-        clip-path: none;
-    }
 }
 
-@media (max-width: 475px) {}
+@media (max-width: 475px) {
+    .passport-device-banner {
+        &__image {
+            max-height: 265px
+        }
+        &__content {
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

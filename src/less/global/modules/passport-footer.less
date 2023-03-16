@@ -49,8 +49,12 @@
             &--icons {
                 &--row {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: center;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    gap: 20px;
+                    
                 }
             }
         }
@@ -116,11 +120,19 @@
         padding: 60px 30px;
 
         &__wrapper {
+            h5 {
+                font-size: 20px;
+                margin: 0;
+                padding-bottom: 30px;
+            }
             &__icons {
-                margin-top: 30px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
+                grid-gap: 30px;
+                max-width: 600px;
+                margin: 0 auto;
+                padding-top: 30px;
 
                 img {}
             }
@@ -163,7 +175,7 @@
                 align-items: center;
 
                 img {
-                    margin-top: 20px;
+                    width: 100%;
                 }
             }
         }
